@@ -1,0 +1,849 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+/* Navigation Website */
+
+nav {
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    transition: 0.4s ease-in-out;
+}
+
+.navbar-scroll {
+    background-color: #f2f2f2;
+    box-shadow: 0 3px 20px rgb(0, 0, 0);
+}
+
+.links-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav div {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-menu a{
+    color: #f2f2f2;
+}
+
+.navbar-menu svg {
+    fill: #f2f2f2;
+}
+
+.navbar-menu:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.navbar-menu:hover a{
+    color: #1e1e1e;
+}
+
+.navbar-menu:hover svg {
+    fill: #1e1e1e;
+}
+
+.navbar-menu-scroll a {
+    color: #1e1e1e;
+}
+
+.navbar-menu-scroll svg {
+    fill: #1e1e1e;
+}
+
+.navbar-menu-scroll:hover {
+    background-color: #1e1e1e;
+}
+
+.navbar-menu-scroll:hover a {
+    color: #f2f2f2;
+}
+
+.navbar-menu-scroll:hover svg {
+    fill: #f2f2f2;
+}
+
+#sidebar-active {
+    display: none;
+}
+
+.open-sidebar-button, .close-sidebar-button {
+    display: none;
+    padding: 0 20px;
+}
+
+svg {
+    fill: #1e1e1e;
+}
+
+p {
+    font-family: "Rajdhani", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Rajdhani", sans-serif;
+    color: #1e1e1e;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.logo-tsm {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.logo-tsm img {
+    width: 44px;
+    height: 44px;
+    margin-right: 8px;
+}
+
+.logo-tsm a {
+    font-family: "Oswald", sans-serif;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 22px;
+    width: 240px;
+}
+
+.download-catalog {
+    display: flex;
+    align-items: center;
+}
+
+.download-catalog svg{
+    margin-right: 2px;
+}
+
+/* Header Website */
+
+header {
+    width: 100%;
+    height: 400px;
+    background-image: url(Asset/header-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.header-background-color {
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-text-container {
+    width: 1440px;
+    position: absolute;
+    top: 132px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-text-container h1 {
+    font-family: "Rajdhani", sans-serif;
+    color: #ECECEC;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.header-text-container p {
+    font-family: "Rajdhani", sans-serif;
+    color: #f2f2f2;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.download-button {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+}
+
+.download-button a {
+    font-size: 16px;
+    padding-left: 6px;
+}
+
+/* Section Website */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section h2 {
+    font-family: "Rajdhani", sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+section h3 {
+    font-family: "Rajdhani", sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+section h4 {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about-us-container {
+    width: 1440px;
+    margin: 30px 0px 50px 0px;
+}
+
+.about-us-cards {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-us-card {
+    display: flex;
+    gap: 64px;
+}
+
+.about-us-company-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px 0px 40px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.062);
+    border-radius: 8px;
+}
+
+.about-us-company-image img {
+    width: 600px;
+    border-radius: 8px;
+}
+
+.about-us-company-text {
+    width: 520px;
+    height: 100%;
+}
+
+.about-us-company-text h4 {
+    text-align: left;
+}
+
+.about-us-company-text p {
+    padding-top: 6px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.our-service {
+    width: 100%;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+
+.our-service-container {
+    width: 1440px;
+    margin: 30px 0px 50px 0px;
+}
+
+.reverse-color{
+    color: #f2f2f2;
+}
+
+.our-service-cards {
+    width: 1440px;
+    margin: 30px 0px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.our-service-card {
+    padding: 20px;
+    width: 260px;
+    height: 160px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-service-text {
+    padding-top: 12px;
+    text-align: center;
+}
+
+.our-service-text p {
+    padding-top: 6px;
+}
+
+.our-service-card svg {
+    fill: #f2f2f2;
+}
+
+.our-product-container {
+    width: 1440px;
+    margin: 30px 0px 50px 0px;
+}
+
+.our-product-cards {
+    width: 1440px;
+    margin: 30px 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.our-product-card {
+    width: 280px;
+    height: 100%;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.062);
+    border-radius: 12px;
+    border: 1px solid rgb(210, 210, 210);
+    margin: 20px 40px 20px 40px;
+}
+
+.our-product-card:hover {
+    border: 1px solid #1e1e1e;
+}
+
+.product-image {
+    width: 280px;
+    height: 190px;
+    border-bottom: 1px solid rgb(210, 210, 210);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-text {
+    width: 250px;
+    height: 100%;
+    padding: 12px 15px 12px 15px;
+}
+
+.product-text h4 {
+    text-align: left;
+}
+
+.product-text p {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.button-liter {
+    padding: 4px 0px 4px 0px;
+}
+
+.product-price {
+    padding-top: 6px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.button-liter button {
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid rgb(210, 210, 210);
+    width: 60px;
+    margin-right: 4px;
+}
+
+.button-liter button:hover {
+    background-color: #1e1e1e;
+    color: #f2f2f2;
+}
+
+.contact-us {
+    width: 100%;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-us-container {
+    width: 1440px;
+    margin: 30px 0px 50px 0px;
+}
+
+.contact-us-cards {
+    width: 1440px;
+    margin: 30px 0px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-us-card {
+    padding: 20px;
+    width: 260px;
+    height: 160px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-us-text {
+    padding-top: 12px;
+    text-align: center;
+}
+
+.contact-us-text p {
+    padding-top: 6px;
+}
+
+.contact-us-card svg {
+    fill: #f2f2f2;
+}
+
+.testimonial-container {
+    width: 1440px;
+    margin: 30px 0px 50px 0px;
+}
+
+.testimonial-cards {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.testimonial-card {
+    z-index: 1;
+    position: relative;
+    background-color: #ffffff;
+    width: 260px;
+    padding: 40px 20px 20px 20px;
+    height: 190px;
+    max-height: 190px;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.062);
+}
+
+.testimonial-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-text svg {
+    fill: #1e1e1e;
+}
+
+.testimonial-text p {
+    padding-top: 6px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: justify;
+    padding: 6px 10px 0px 10px;
+}
+
+.testimonial-image {
+    top: -30px;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-image img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.testimonial-star {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.testimonial-star span {
+    color: darkorange;
+    font-size: 16px;
+}
+
+
+/* Footer Website */
+
+
+footer {
+    width: 100%;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.up-footer-container {
+    padding: 30px 0px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 1440px;
+}
+
+.down-footer-container {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+}
+
+.down-footer-container p {
+    color: #f2f2f2;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-logo {
+    margin-right: 0px;
+}
+
+.footer-logo a {
+    color: #f2f2f2;
+}
+
+.menu-navbar {
+    display: flex;
+    align-items: start;
+}
+
+.menu-navbar-cont {
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.menu-navbar-main {
+    font-weight: bold;
+}
+
+.menu-navbar-submenu {
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 6px;
+}
+
+.menu-navbar-submenu:hover {
+    text-decoration: #f2f2f2 underline;
+}
+
+.menu-navbar a {
+    color: #f2f2f2;
+}
+
+.form-customer {
+    margin-left: 20px;
+}
+
+.form-customer p {
+    color: #f2f2f2;
+    margin-bottom: 6px;
+    text-align: left;
+}
+
+input {
+    width: 200px;
+    height: 32px;
+    border-radius: 6px;
+    border: none;
+    background-color: transparent;
+    margin: 6px 6px 6px 0px;
+    padding: 0px 6px;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 12px;
+    border: 1px solid #f2f2f2;
+    color: #f2f2f2;
+    font-weight: 500;
+}
+
+button {
+    cursor: pointer;
+    width: 214px;
+    height: 32px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    background-color: yellow;
+}
+
+.social-media p {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1439px) {
+
+    .header-text-container {
+        width: 100%;
+    }
+
+    .about-us-container {
+        width: 100%;
+    }
+
+    .about-us-cards {
+        width: 100%;
+        padding: 30px 20px 20px 20px;
+    }
+
+    .about-us-card {
+        gap: 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-us-company-text {
+        margin-top: 50px;
+    }
+
+    .our-service-container { 
+        width: 100%;
+        padding: 30px 0 50px 0;
+    }
+
+    .our-service-cards {
+        width: 100%;
+    }
+
+    .our-product-container {
+        width: 100%;
+        padding: 30px 0px 0px 0px;
+    }
+
+    .our-product-cards {
+        width: 100%;
+    }
+
+    .contact-us-container {
+        width: 100%;
+        padding: 30px 20px 50px 20px;
+    }
+
+    .contact-us-cards {
+        width: 100%;
+    }
+
+    .testimonial-container {
+        width: 100%;
+    }
+
+    .testimonial-cards {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .testimonial-card {
+        margin: 30px 20px 20px 30px;
+    }
+
+
+    .up-footer-container {
+        width: 90%;
+        padding: 30px 20px 20px 20px;
+    }
+
+    .down-footer-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    
+    .links-container {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+
+        background-color: #f2f2f2;
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+        transition: 0.75s ease-out;
+    }
+
+    .navbar-menu, .logo-tsm {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+
+    .open-sidebar-button, .close-sidebar-button {
+        padding: 20px;
+        display: block;
+    }
+
+    #sidebar-active:checked ~ .links-container {
+        right: 0;
+    }
+
+    #sidebar-active:checked ~ #overlay {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+
+    .footer-logo {
+        justify-content: center;
+    }
+
+    .header-text-container h1 {
+        text-align: center;
+    }
+
+    .up-footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+}
+
+@media screen and (max-width: 426px) {
+
+    header {
+        height: 600px;
+    }
+
+    .header-background-color {
+        height: 600px;
+    }
+
+    .header-text-container {
+        padding: 0px 20px;
+    }
+
+    .header-text-container p {
+        text-align: center;
+    }
+
+    .about-us-company-image{
+        padding: 0px 20px;
+    }
+
+    .about-us-company-image img {
+        width: 320px;
+    }
+
+    .about-us-company-text {
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    .our-service-container {
+        padding: 0px 20px;
+    }
+
+    .our-service-cards {
+        flex-wrap: wrap;
+    }
+
+    .contact-us-container {
+        padding: 0px 20px;
+    }
+
+    .contact-us-cards {
+        flex-wrap: wrap;
+    }
+
+    .testimonial-cards {
+        flex-wrap: wrap;
+    }
+
+    .menu-navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .down-footer-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-customer {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+}
